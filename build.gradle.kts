@@ -4,7 +4,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.7"
 }
 
-group = "com.minh.speechmanage"
+group = "com.minh.speechmanager"
 version = "1.0-SNAPSHOT"
 
 repositories {
