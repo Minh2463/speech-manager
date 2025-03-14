@@ -3,8 +3,12 @@
 - Gradle 8.8
 - PostgreSQL database
 - Run using IntelliJ
+------
+## Postman Request Collection
+- Postman API testing request collection is included in `Speech API.postman_collection.json`
 
-## API
+------
+## API Documentation
 
 ### Create A New Speech
 `POST /speech/create`
