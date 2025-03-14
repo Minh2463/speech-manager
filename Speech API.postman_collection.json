@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "da7972c4-8ef9-4afd-908a-f0fe671d1ede",
+		"name": "Speech API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34458378"
+	},
+	"item": [
+		{
+			"name": "Create Speech",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"author\": \"Dat Vu\",\n  \"speechName\": \"Game 123\",\n  \"content\": \"Intro to game mechanic\",\n  \"date\": \"03/25/2025\",\n  \"keywords\": [\"plane\", \"game video\", \"intro\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/speech/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speech",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/speech/search/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speech",
+						"search",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Keyword",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/speech/search/extra?keyword=game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speech",
+						"search",
+						"extra"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "game"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/speech/search/extra?author=minh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speech",
+						"search",
+						"extra"
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "minh"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Keyword & Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/speech/search/extra?author=dat&keyword=game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speech",
+						"search",
+						"extra"
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "dat"
+						},
+						{
+							"key": "keyword",
+							"value": "game"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Speech Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/speech/search/name?name=game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speech",
+						"search",
+						"name"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "game"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/speech/search/id?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speech",
+						"search",
+						"id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Speech",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Speech",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/speech/delete?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speech",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
